@@ -21,6 +21,11 @@ FUNCTIONALITY
 - Improved accuracy of search by performing lowercase string matching.
 - Found an issue in specialty filtering - the original code did not account for specialties being a String[]. The new code ensures for each advocate each specialty is matched against the user's search term and if there is a match that advocate will be displayed.
 
+These screenshots demonstrate the search functionality working correctly:
+![ALT TEXT](../demo-name-search.png)
+![ALT TEXT](../demo-specialty-search-1.png)
+![ALT TEXT](../demo-specialty-search-2.png)
+
 The work I did not get to but would implement given additional time is the following:
 
 1) Adding a filter UI which is preferred over the input field for database searching, like checkboxes for years of experience, specialties etc. This reduces typing burden on user and optimizes filtering code since we would only filter the fields we know the user has specified.
