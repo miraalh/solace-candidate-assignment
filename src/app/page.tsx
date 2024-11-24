@@ -9,19 +9,26 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
+    const abortController = new AbortController();
+
     console.log("fetching advocates...");
+
     fetch("/api/advocates").then((response) => {
       response.json().then((jsonResponse) => {
         setAdvocates(jsonResponse.data);
         setFilteredAdvocates(jsonResponse.data);
+      }).catch(err => {
+        console.log("Error fetching advocates");
       });
     });
+
+    return () => abortController.abort();
   }, []);
 
   const onChange = (e) => {
     const searchTerm = e.target.value;
     setSearchTerm(searchTerm);
-    
+
     console.log("filtering advocates...");
     const filteredAdvocates = advocates.filter((advocate: Advocate) => {
       return (
