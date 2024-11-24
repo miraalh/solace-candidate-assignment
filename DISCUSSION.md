@@ -4,6 +4,8 @@ This is my submission to your codebase with bug fixes and improvements.
 
 My work is split into several narrowly scoped commits for clear, incremental changes. In an actual codebase I would normally make a few PR's, but I kept it all in one for the sake of assignment legibility.
 
+The bulk of my dev work was done in a single sitting. Cloned at 10:30PM PST Saturday Nov 23 and made my last code commit 1:07AM PST Sunday Nov 24th (total duration of 2 hrs 37 min). I took additional time to create this write-up and the next morning I got everything nicely situated in this private repo in Git (did not fork as per assignment directions).
+
 The changes are the following:
 
 GLARING BUGS
